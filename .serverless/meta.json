@@ -1,0 +1,66 @@
+{
+  "/Users/tigerplayspc/Downloads/exampleLambda": {
+    "versionSfCore": null,
+    "versionFramework": "4.4.7",
+    "isWithinCompose": false,
+    "isCompose": false,
+    "composeOrgName": null,
+    "composeServiceName": null,
+    "servicePath": "/Users/tigerplayspc/Downloads/exampleLambda",
+    "serviceConfigFileName": "serverless.yml",
+    "service": {
+      "service": "example-serverless",
+      "provider": {
+        "name": "aws",
+        "runtime": "nodejs12.x",
+        "stage": "dev",
+        "region": "us-west-2"
+      },
+      "functions": {
+        "app": {
+          "handler": "index.handler",
+          "events": [
+            {
+              "http": "ANY /"
+            }
+          ]
+        }
+      }
+    },
+    "serviceRawFile": "service: example-serverless\n \nprovider:\n  name: aws\n  runtime: nodejs12.x\n  stage: dev\n  region: us-west-2\n \nfunctions:\n  app:\n    handler: index.handler\n    events:\n      - http: ANY /",
+    "command": [
+      "deploy"
+    ],
+    "options": {},
+    "error": {
+      "message": "Unauthorized",
+      "stack": "Error: Unauthorized\n    at Authentication.getClientDataFromAccessKey (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:688:17089)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Authentication.getAuthenticatedData (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:688:3689)\n    at async Authentication.resolverAuthenticate (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:688:20575)\n    at async _Meta.authenticate (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:721:31838)\n    at async _Meta.authenticateAndResolve (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:721:31259)\n    at async route (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:1011:14685)\n    at async Object.run2 [as run] (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:1011:15173)\n    at async run3 (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:1011:16435)"
+    },
+    "machineId": "a34298767f0db53a0fd450bd5200e796",
+    "stage": "dev",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  },
+  "unknown": {
+    "versionSfCore": null,
+    "versionFramework": "4.4.7",
+    "isWithinCompose": false,
+    "composeOrgName": null,
+    "composeServiceName": null,
+    "command": [],
+    "options": {},
+    "error": {
+      "message": "Unauthorized",
+      "stack": "Error: Unauthorized\n    at Authentication.getClientDataFromAccessKey (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:688:17089)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Authentication.getAuthenticatedData (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:688:3689)\n    at async routeNew (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:696:4936)\n    at async commandOnboarding (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:696:1998)\n    at async catchAllHandler (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:721:19702)\n    at async runCommand (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:1011:10875)\n    at async route (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:1011:13424)\n    at async Object.run2 [as run] (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:1011:15173)\n    at async run3 (file:///Users/tigerplayspc/.serverless/releases/4.4.7/package/dist/sf-core.js:1011:16435)"
+    },
+    "machineId": "a34298767f0db53a0fd450bd5200e796",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}
